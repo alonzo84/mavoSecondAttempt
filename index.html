@@ -12,16 +12,16 @@
 
 </head>
 <body>
-<main mv-app class="talks" mv-storage="https://github.com/alonzo84/alonzo84.github.io/data.json" mv-init="talks-subset.json">
+<main mv-app class="talks" mv-plugins="gsheets" mv-storage="https://docs.google.com/spreadsheets/d/1lCILFpmgbQRogLKUX9mXEtuy3GRnAWohRgF7TVq_C6g/edit?usp=sharing" mv-storage-sheet="Sheet1" >
 	<h1>[count(talk)] sessions at [count(event)] events ([count(upcoming)] events upcoming)</h1>
 	<article mv-multiple property="event" mv-order="desc">
 		<meta property="upcoming" content="[date > $now]" />
-		<h1 mv-multiple property="talk">
-			<span property="title" mv-default>TBD</span>
+		<!-- <h1 mv-multiple property="talk">
+			<span property="title" mv-default>Visita a ser agendada</span>
 			<span property class="type" mv-editor="#talk-type"></span>
 			<a property class="video" target="_blank">Video</a>
 			<a property class="slides" target="_blank">Slides</a>
-		</h1>
+		</h1> -->
 		<h2>
 			<a property="url" target="_blank">
 				<span property="name"></span>
